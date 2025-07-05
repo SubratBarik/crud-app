@@ -6,18 +6,18 @@ import Contact from './pages/ContactUs';
 import Service from './pages/Services';
 import NotFound from './components/NotFound';
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 function App() {
 	return (
 		<>	
 		<Router>
 			<Routes>
-				<Route path="/" element={<Home />} />
-				<Route path="/about-us" element={<About />} />
-				<Route path="/contact-us" element={<Contact />} />
-				<Route path="/services" element={<Service />} />
-				<Route path="/*" element={<NotFound />} />
+				<Route exact path="/" element={<Home />} />
+				<Route exact path="/about-us" element={<About />} />
+				<Route exact path="/contact-us" element={<Contact />} />
+				<Route exact path="/services" element={<Service />} />
+				<Route exact path="/*" element={<NotFound />} />
 			</Routes>
 		</Router>
 		{/* <Home /> */}
