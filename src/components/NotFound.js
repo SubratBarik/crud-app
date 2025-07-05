@@ -2,7 +2,7 @@ import React from "react";
 import TopMenu from "../components/TopMenu";
 import Footer from "../components/Footer";
 
-function AboutUs() {
+function NotFound() {
     return (
         <>
             <TopMenu />
@@ -11,7 +11,9 @@ function AboutUs() {
 				<div className="container">
 					<div className="row">
 						<div className="col-md-12">
-							<div style={{ height: '150px', background: 'Turquoise', marginBottom: '10px' }}></div>
+							<div style={{ height: '150px', background: 'Turquoise', marginBottom: '10px', textAlign: 'center' }}>
+								<h2 style={{ lineHeight: '150px', color: 'white' }}>Page Not Found</h2>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -22,4 +24,4 @@ function AboutUs() {
     );
 }
 
-export default AboutUs;
+export default NotFound;
