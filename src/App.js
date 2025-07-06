@@ -6,7 +6,7 @@ import Contact from './pages/ContactUs';
 import Service from './pages/Services';
 import NotFound from './components/NotFound';
 
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
 	return (
