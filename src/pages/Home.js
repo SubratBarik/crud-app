@@ -1,21 +1,11 @@
 import React from "react";
-import TopMenu from "../components/TopMenu";
+import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 function Home() {
     return (
         <>
-            <TopMenu />
-
-			<div className="asset-scrollar">
-				<div className="container">
-					<div className="row">
-						<div className="col-md-12">
-							<div style={{ height: '50px', background: 'LightSeaGreen' }}></div>
-						</div>
-					</div>
-				</div>
-			</div> {/* Asset Scrollar Ends */}
+            <Header />
 
 			<div className="banner-section">
 				<div className="container">
@@ -86,19 +76,6 @@ function Home() {
 					</div>
 				</div>
 			</div> {/* Banner Scrollar Ends */}
-
-			<div className="table-section">
-				<div className="container">
-					<div className="row">
-						<div className="col-md-8">
-							<div style={{ height: '150px', background: 'Turquoise', marginBottom: '10px' }}></div>
-						</div>
-						<div className="col-md-4">
-							<div style={{ height: '150px', background: 'Turquoise', marginBottom: '10px' }}></div>
-						</div>
-					</div>
-				</div>
-			</div> {/* Banner Scrollar Ends Turquoise */}
 
 			<Footer />
         </>

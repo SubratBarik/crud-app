@@ -1,11 +1,11 @@
 import React from "react";
-import TopMenu from "../components/TopMenu";
+import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 function Services() {
     return (
          <>
-            <TopMenu />
+            <Header />
 
             <div className="table-section">
 				<div className="container">
