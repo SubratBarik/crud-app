@@ -11,7 +11,7 @@ const Shop = () => {
 				<div className="container">
 					<div className="row">
             <div className="col-md-12">
-              <div style={{ height: '160px', background: 'Turquoise', marginBottom: '10px' }}></div>
+              <div style={{ height: '550px', background: 'Turquoise', marginBottom: '10px' }}></div>
             </div>
 					</div>
 				</div>
