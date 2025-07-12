@@ -1,7 +1,17 @@
-import React from "react";
+import Reac, {useState} from "react";
 import { Link } from 'react-router-dom';
 
 function Header() {
+
+	// State to manage theme toggle
+	const [isActive, setIsActive] = useState(false);
+
+	// Function to handle theme change
+	const themeChange = () => {
+		//console.log("Toggle changed");
+		setIsActive(prev => !prev);
+	}
+
     return (
         <>
             <div className="header">
@@ -29,6 +39,9 @@ function Header() {
 											</li>
 											<li className="nav-item">
 												<Link className="nav-link" to="/contact-us" style={{ color: 'white', textDecoration: 'none', lineHeight: '45px' }}>Contact Us</Link>
+											</li>
+											<li className="nav-item mx-3" style={{ lineHeight: '60px', color: 'white', textDecoration: 'none', fontSize: '20px', cursor: 'pointer', fontWeight: 'bold' }}>
+												<i className={isActive ? 'bi bi-toggle-on active1' : 'bi bi-toggle-off'} onClick={themeChange}></i>
 											</li>
 										</ul>
 									</div>

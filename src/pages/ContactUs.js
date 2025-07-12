@@ -10,8 +10,10 @@ export default function ContactUs(props) {
             <div className="table-section">
 				<div className="container">
 					<div className="row">
-						<div style={{ height: '550px', background: 'Turquoise', marginBottom: '10px', paddingTop: '10px' }} className="text-center">
-							<h3 className="text-center">{props.title}</h3>
+						<div className="col-md-12">
+							<div style={{ height: '550px', background: 'Turquoise', marginBottom: '10px', padding: '10px' }}>
+								<h3 className="text-center">{props.title}</h3>
+							</div>
 						</div>
 					</div>
 				</div>
