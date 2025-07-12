@@ -41,7 +41,7 @@ function Header() {
 												<Link className="nav-link" to="/contact-us" style={{ color: 'white', textDecoration: 'none', lineHeight: '45px' }}>Contact Us</Link>
 											</li>
 											<li className="nav-item mx-3" style={{ lineHeight: '60px', color: 'white', textDecoration: 'none', fontSize: '20px', cursor: 'pointer', fontWeight: 'bold' }}>
-												<i className={isActive ? 'bi bi-toggle-on active1' : 'bi bi-toggle-off'} onClick={themeChange}></i>
+												<i className={isActive ? 'bi bi-toggle-on' : 'bi bi-toggle-off'} onClick={themeChange}></i>
 											</li>
 										</ul>
 									</div>
