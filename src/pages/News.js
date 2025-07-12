@@ -44,6 +44,7 @@ export default function News(props) {
 		return text.length > maxLength ? text.substring(0, maxLength) + '...' : text;
 	};
 
+	// Render loading state or error message
 	if (loading) return <p className="text-center mt-5">Loading...</p>;
 	if (error) return <p className="text-center mt-5">{error}</p>;
 
