@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
-function Home() {
+export default function Home() {
     return (
         <>
             <Header />
@@ -30,7 +30,7 @@ function Home() {
 				</div>
 			</div> {/* Banner Section Ends */}
 
-			<div className="blog-section">
+			{/* <div className="blog-section">
 				<div className="container">
 					<div className="row">
 						<div className="col-md-8">
@@ -56,7 +56,7 @@ function Home() {
 						</div>
 					</div>	
 				</div>	
-			</div> {/* Banner Section Ends */}
+			</div> Banner Section Ends */}
 
 			<div className="blog-scrollar">
 				<div className="container">
@@ -82,4 +82,4 @@ function Home() {
     );
 }
 
-export default Home;
+
