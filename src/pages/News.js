@@ -69,7 +69,7 @@ export default function News(props) {
 												<div className="col-md-3 mb-3" key={index}>
 													<div className="card">
 														{article.urlToImage && (
-															<img src={article.urlToImage} alt={article.title} style={{ width: '100%', maxWidth: '400px', height: '200px', overflow: 'hidden' }} />
+															<img src={article.urlToImage} alt={article.title} style={{ width: '100%', minHeight: '200px', overflow: 'hidden' }} />
 														)}
 														<div className="card-body">
 															<h5 className="card-title">{truncate(article.title, 40)}</h5>
