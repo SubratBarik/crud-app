@@ -32,7 +32,7 @@ function Header() {
 												<Link className="nav-link" to="/about-us" style={{ color: 'white', textDecoration: 'none', lineHeight: '45px' }}>About Us</Link>
 											</li>
 											<li className="nav-item">
-												<Link className="nav-link" to="/services" style={{ color: 'white', textDecoration: 'none', lineHeight: '45px' }}>Services</Link>
+												<Link className="nav-link" to="/news" style={{ color: 'white', textDecoration: 'none', lineHeight: '45px' }}>News</Link>
 											</li>
 											<li className="nav-item">
 												<Link className="nav-link" to="/shop" style={{ color: 'white', textDecoration: 'none', lineHeight: '45px' }}>Shop</Link>
