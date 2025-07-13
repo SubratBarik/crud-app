@@ -14,6 +14,8 @@ export default function NewsCard(props) {
     const [page, setPage] = useState(1);
     const pageSize = 9; // You can adjust this
 
+    const totalPages = Math.min(Math.ceil(totalResults / pageSize), 10); // cap at 10 pages
+
     // Fetch news data from an API or a static source
     useEffect(() => {
         const fetchNews = async () => {
@@ -56,7 +58,7 @@ export default function NewsCard(props) {
     if (loading) return <p className="text-center mt-5"><img src={Loader} alt="Loading..." /></p>;
     if (error) return <p className="text-center mt-5">{error}</p>;
 
-    const totalPages = Math.ceil(totalResults / pageSize);
+    //const totalPages = Math.ceil(totalResults / pageSize);
 
     return (
         <>
@@ -84,17 +86,30 @@ export default function NewsCard(props) {
             ))}
 
             {/* Pagination Controls */}
-            <div className="d-flex justify-content-center mt-4">
+            <div className="d-flex justify-content-center mt-4 flex-wrap gap-2">
                 <button
-                    className="btn btn-outline-secondary me-2"
+                    className="btn btn-outline-secondary"
                     onClick={() => setPage((prev) => Math.max(prev - 1, 1))}
                     disabled={page === 1}
                 >
                     Previous
                 </button>
-                <span className="align-self-center px-3">Page {page} of {totalPages}</span>
+
+                {[...Array(totalPages)].map((_, i) => {
+                    const pageNum = i + 1;
+                    return (
+                        <button
+                            key={pageNum}
+                            className={`btn btn-sm ${pageNum === page ? "btn-primary" : "btn-outline-primary"}`}
+                            onClick={() => setPage(pageNum)}
+                        >
+                            {pageNum}
+                        </button>
+                    );
+                })}
+
                 <button
-                    className="btn btn-outline-secondary ms-2"
+                    className="btn btn-outline-secondary"
                     onClick={() => setPage((prev) => Math.min(prev + 1, totalPages))}
                     disabled={page === totalPages}
                 >
