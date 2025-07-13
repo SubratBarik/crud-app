@@ -12,7 +12,7 @@ export default function NewsCard(props) {
     const [error, setError] = useState(null);
     const [totalResults, setTotalResults] = useState(0);
     const [page, setPage] = useState(1);
-    const pageSize = 9; // You can adjust this
+    const pageSize = 8; // You can adjust this
 
     const totalPages = Math.min(Math.ceil(totalResults / pageSize), 10); // cap at 10 pages
 
