@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 
+import Loader from '../images/Loader.gif';
+
 export default function NewsCard(props) {
 
     const [articles, setArticles] = useState([]);
@@ -42,7 +44,7 @@ export default function NewsCard(props) {
     };
 
     // Render loading state or error message
-    if (loading) return <p className="text-center mt-5">Loading...</p>;
+    if (loading) return <p className="text-center mt-5"><img src={Loader} alt="Loading..." /></p>;
     if (error) return <p className="text-center mt-5">{error}</p>;
 
     return (
